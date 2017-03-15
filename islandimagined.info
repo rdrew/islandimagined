@@ -14,6 +14,7 @@ stylesheets[all][] = build/css/islandimagined.styles.css
 ; ========================================
 ; Scripts
 ; ========================================
+scripts[] = build/js/foundation.min.js
 scripts[] = build/js/islandimagined.behaviors.js
 
 ; ========================================
