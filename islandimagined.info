@@ -8,13 +8,13 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
-stylesheets[all][] = css/islandimagined.reset.css
-stylesheets[all][] = css/islandimagined.styles.css
+stylesheets[all][] = build/css/islandimagined.reset.css
+stylesheets[all][] = build/css/islandimagined.styles.css
 
 ; ========================================
 ; Scripts
 ; ========================================
-scripts[] = js/islandimagined.behaviors.js
+scripts[] = build/js/islandimagined.behaviors.js
 
 ; ========================================
 ; Regions
