@@ -1,0 +1,49 @@
+@mixin topnav {
+  
+  $title_font_size  : 1.8rem;
+  $slogan_font_size : 1rem;
+  $logo_width       : 3rem;
+  $top_spacing      : 1rem;
+
+  .topnav {
+
+    @include top-bar-container;
+    
+
+    .site-branding {
+      @extend .top-bar-title;
+
+      &__logo {
+        //display:none;
+        img {
+          width: $logo_width;
+        }
+      }
+
+      &__name {
+        font-size: $title_font_size;
+      }
+      &__slogan {
+
+        font-size: $slogan_font_size;
+        display:none;
+      }
+
+    }
+    #responsive-menu {
+    margin-top: $top_spacing;
+    }
+    .main-menu {
+      @extend .top-bar-left;
+    }
+
+    .simple-search {
+      @extend .top-bar-right;
+      width: $topbar-input-width !important;
+    }
+
+
+  }
+}
+
+@include topnav;

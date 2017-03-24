@@ -1,0 +1,13 @@
+.panel-panel {
+@include card-container;
+.pane-title {
+
+  @extend .card-divider;
+
+}
+div {
+
+  @extend .card-section;
+}
+
+}

@@ -3033,15 +3033,15 @@ select {
   .card > :last-child {
     margin-bottom: 0; }
 
-.card-divider {
+.card-divider, .panel-panel .pane-title {
   padding: 1rem;
   background: #e6e6e6; }
-  .card-divider > :last-child {
+  .card-divider > :last-child, .panel-panel .pane-title > :last-child {
     margin-bottom: 0; }
 
-.card-section {
+.card-section, .panel-panel div {
   padding: 1rem; }
-  .card-section > :last-child {
+  .card-section > :last-child, .panel-panel div > :last-child {
     margin-bottom: 0; }
 
 .close-button {
@@ -4542,41 +4542,51 @@ a.thumbnail {
   .top-bar,
   .top-bar ul {
     background-color: #e6e6e6; }
+  .top-bar ul ul {
+    background-color: #fff; }
   .top-bar input {
-    max-width: 200px;
+    max-width: 16rem;
     margin-right: 1rem; }
   .top-bar .input-group-field {
     width: 100%;
     margin-right: 0; }
   .top-bar input.button, .top-bar input[type="submit"] {
     width: auto; }
-  .top-bar .top-bar-left,
-  .top-bar .top-bar-right {
+  .top-bar .top-bar-left, .top-bar .topnav .main-menu, .topnav .top-bar .main-menu,
+  .top-bar .top-bar-right,
+  .top-bar .topnav .simple-search, .topnav
+  .top-bar .simple-search {
     width: 100%; }
   @media print, screen and (min-width: 40em) {
-    .top-bar .top-bar-left,
-    .top-bar .top-bar-right {
+    .top-bar .top-bar-left, .top-bar .topnav .main-menu, .topnav .top-bar .main-menu,
+    .top-bar .top-bar-right,
+    .top-bar .topnav .simple-search, .topnav
+    .top-bar .simple-search {
       width: auto; } }
   @media screen and (max-width: 63.9375em) {
-    .top-bar.stacked-for-medium .top-bar-left,
-    .top-bar.stacked-for-medium .top-bar-right {
+    .top-bar.stacked-for-medium .top-bar-left, .top-bar.stacked-for-medium .topnav .main-menu, .topnav .top-bar.stacked-for-medium .main-menu,
+    .top-bar.stacked-for-medium .top-bar-right,
+    .top-bar.stacked-for-medium .topnav .simple-search, .topnav
+    .top-bar.stacked-for-medium .simple-search {
       width: 100%; } }
   @media screen and (max-width: 74.9375em) {
-    .top-bar.stacked-for-large .top-bar-left,
-    .top-bar.stacked-for-large .top-bar-right {
+    .top-bar.stacked-for-large .top-bar-left, .top-bar.stacked-for-large .topnav .main-menu, .topnav .top-bar.stacked-for-large .main-menu,
+    .top-bar.stacked-for-large .top-bar-right,
+    .top-bar.stacked-for-large .topnav .simple-search, .topnav
+    .top-bar.stacked-for-large .simple-search {
       width: 100%; } }
 
-.top-bar-title {
+.top-bar-title, .topnav .site-branding {
   display: inline-block;
   float: left;
   padding: 0.5rem 1rem 0.5rem 0; }
-  .top-bar-title .menu-icon {
+  .top-bar-title .menu-icon, .topnav .site-branding .menu-icon {
     bottom: 2px; }
 
-.top-bar-left {
+.top-bar-left, .topnav .main-menu {
   float: left; }
 
-.top-bar-right {
+.top-bar-right, .topnav .simple-search {
   float: right; }
 
 .hide {
@@ -4685,6 +4695,52 @@ a.thumbnail {
 .simple-search input[type="submit"],
 .simple-search label {
   display: none; }
+
+.simple-search input[type="text"] {
+  margin: 0; }
+
+.topnav {
+  padding: 0.5rem; }
+  .topnav::before, .topnav::after {
+    display: table;
+    content: ' '; }
+  .topnav::after {
+    clear: both; }
+  .topnav,
+  .topnav ul {
+    background-color: #e6e6e6; }
+  .topnav ul ul {
+    background-color: #fff; }
+  .topnav input {
+    max-width: 16rem;
+    margin-right: 1rem; }
+  .topnav .input-group-field {
+    width: 100%;
+    margin-right: 0; }
+  .topnav input.button, .topnav input[type="submit"] {
+    width: auto; }
+  .topnav .site-branding__logo img {
+    width: 3rem; }
+  .topnav .site-branding__name {
+    font-size: 1.8rem; }
+  .topnav .site-branding__slogan {
+    font-size: 1rem;
+    display: none; }
+  .topnav #responsive-menu {
+    margin-top: 1rem; }
+  .topnav .simple-search {
+    width: 16rem !important; }
+
+.panel-panel {
+  margin-bottom: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a; }
+  .panel-panel > :last-child {
+    margin-bottom: 0; }
 
 /**********
  *  junk  *

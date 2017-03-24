@@ -56,6 +56,14 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+//robs colors
+//-----------
+$light-green: #47632d;
+$dark-green: #30341D;
+$orange-red: #A12D1A;
+$tan: #895727;
+$brown: #492f13;
+//-----------
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -614,8 +622,10 @@ $tooltip-radius: $global-radius;
 
 $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
-$topbar-submenu-background: $topbar-background;
+//$topbar-submenu-background: $topbar-background;
+$topbar-submenu-background: #fff;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
-$topbar-input-width: 200px;
+//$topbar-input-width: 100%;
+$topbar-input-width: 16rem;
 $topbar-unstack-breakpoint: medium;
 
