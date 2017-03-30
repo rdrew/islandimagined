@@ -1,8 +1,8 @@
 @mixin topnav {
   
-  $title_font_size  : 1.8rem;
+  $title_font_size  : 2rem;
   $slogan_font_size : 1rem;
-  $logo_width       : 3rem;
+  $logo_width       : rem-calc(120);
   $top_spacing      : 1rem;
 
   .topnav {
@@ -11,17 +11,28 @@
     
 
     .site-branding {
-      @extend .top-bar-title;
+      @extend .top-bar-left;
 
       &__logo {
         //display:none;
-        img {
+        float:left;
+        margin-right: rem-calc(10);
+        padding-right: rem-calc(10);
+        line-height: 0;
+        border-right: 1px solid #fff;
+
+        svg {
           width: $logo_width;
+          height: auto;
         }
       }
 
       &__name {
         font-size: $title_font_size;
+        display: inline-block;
+        color : $white;
+        a {
+        }
       }
       &__slogan {
 
@@ -31,14 +42,15 @@
 
     }
     #responsive-menu {
-    margin-top: $top_spacing;
+    //margin-top: $top_spacing;
     }
     .main-menu {
-      @extend .top-bar-left;
+      /*@extend .top-bar-left;*/
     }
 
     .simple-search {
       @extend .top-bar-right;
+      margin-top: rem-calc(8);
       width: $topbar-input-width !important;
     }
 
