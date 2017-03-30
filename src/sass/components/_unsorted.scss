@@ -11,3 +11,15 @@ div {
 }
 
 }
+.nav-wrapper {
+
+  /*padding: 0 1rem;*/
+
+}
+.l-main, .l-region-header {
+  @include grid-row;
+
+
+
+
+}

@@ -42,36 +42,47 @@
 //  37. Top Bar
 
 @import 'util/util';
-
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon|IM+Fell+French+Canon+SC|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC');
+$font__fell-1: 'IM Fell Great Primer', serif;
+$font__fell-1--sc: 'IM Fell Great Primer SC', serif;
+$font__fell-2: 'IM Fell French Canon', serif;
+$font__fell-2--sc: 'IM Fell French Canon SC', serif;
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
-$global-width: rem-calc(1200);
-$global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
-);
 //robs colors
 //-----------
 $light-green: #47632d;
 $dark-green: #30341D;
 $orange-red: #A12D1A;
 $tan: #895727;
+$tan-1: #F6DBBB;
+$tan-2: #A88F71;
+$tan-3: #786554;
+$tan-4: #574938;
 $brown: #492f13;
 //-----------
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+$foundation-palette: (
+  //primary: #1779ba,
+  primary: $orange-red,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+//$black: #0a0a0a;
+$black: #2f2b27;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $font__fell-1;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -112,7 +123,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+//$header-font-family: $body-font-family;
+$header-font-family: $font__fell-1--sc;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -121,17 +133,17 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
+    'h1': ('font-size': 26),
     'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h3': ('font-size': 16),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h1': ('font-size': 50),
+    'h2': ('font-size': 34),
+    'h3': ('font-size': 25),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -350,7 +362,7 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: $tan-1;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
@@ -421,7 +433,8 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+//$menu-item-background-active: get-color(primary);
+$menu-item-background-active: $tan-3;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
@@ -621,7 +634,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $black;
 //$topbar-submenu-background: $topbar-background;
 $topbar-submenu-background: #fff;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
