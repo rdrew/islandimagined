@@ -4700,19 +4700,39 @@ a.thumbnail {
   padding: 0; }
 
 footer {
+  padding-top: 1rem;
   /*color: lighten($tan-4, 40%);*/
   color: #F6DBBB;
   background: #574938; }
   footer a {
     float: right; }
-  footer svg g {
-    fill: #F6DBBB; }
+  footer svg {
+    width: 100%;
+    height: auto; }
+    footer svg * {
+      fill: #F6DBBB; }
+      footer svg * #Oval,
+      footer svg * #Oval use {
+        stroke: #F6DBBB; }
 
 .sub-footer {
   padding: 1rem;
   background: #382f24; }
   .sub-footer p {
     margin: 0; }
+
+.footer-logo svg {
+  width: 9rem; }
+
+#prov_govt {
+  text-align: center; }
+
+#museum {
+  text-align: right; }
+
+#upei_logo svg {
+  padding-top: 1rem;
+  width: 11rem; }
 
 .l-header {
   background: #A88F71;

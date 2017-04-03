@@ -1,4 +1,5 @@
 footer {
+  padding-top: 1rem ;
   $text-color: $tan-1;
   $bg-color: $tan-4;
   /*color: lighten($tan-4, 40%);*/
@@ -7,10 +8,17 @@ footer {
   a {
   float:right;
   }
-  svg g {
-  
-    fill: $text-color;
-  }
+  svg { 
+    width: 100%;
+    height:auto;
+    * {
+
+      fill: $text-color;
+      #Oval,
+      #Oval use {
+        stroke: $text-color;
+      }
+  } }
   
 }
 .sub-footer {
@@ -22,3 +30,20 @@ footer {
   background: darken($tan-4, 10%);
   
 }
+ .footer-logo svg {
+
+ 
+   width: 9rem;
+ 
+ }
+ #prov_govt {
+ text-align: center;
+ }
+ #museum {
+ text-align: right;
+ }
+ #upei_logo svg {
+ padding-top: 1rem;
+   width: 11rem;
+ 
+ }
