@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon|IM+Fell+French+Canon+SC|IM+Fell+Great+Primer|IM+Fell+Great+Primer+SC");
+/*$card-divider-background: $light-gray;*/
 /**
  * Foundation for Sites by ZURB
  * Version 6.3.1
@@ -3028,7 +3029,7 @@ select {
 
 .card {
   margin-bottom: 1rem;
-  border: 1px solid #e6e6e6;
+  border: none;
   border-radius: 0;
   background: #fefefe;
   box-shadow: none;
@@ -3039,7 +3040,7 @@ select {
 
 .card-divider {
   padding: 1rem;
-  background: #e6e6e6; }
+  background: #A88F71; }
   .card-divider > :last-child {
     margin-bottom: 0; }
 
@@ -4699,6 +4700,9 @@ a.thumbnail {
 .panel-panel div.card {
   padding: 0; }
 
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
 footer {
   padding-top: 1rem;
   /*color: lighten($tan-4, 40%);*/
@@ -4741,10 +4745,9 @@ footer {
 header {
   text-align: center; }
 
-#site-name {
-  margin: 0 1rem; }
-  #site-name a {
-    color: #2f2b27; }
+.site-branding__name {
+  margin: 0 1rem;
+  color: #2f2b27; }
 
 .site-name__icon {
   padding-top: 0.625rem; }
