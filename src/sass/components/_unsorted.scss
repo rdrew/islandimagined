@@ -1,16 +1,4 @@
-.panel-panel {
-@include card-container;
-.pane-title {
 
-  @extend .card-divider;
-
-}
-div {
-
-  @extend .card-section;
-}
-
-}
 .nav-wrapper {
 
   /*padding: 0 1rem;*/
@@ -18,8 +6,6 @@ div {
 }
 .l-main, .l-region-header {
   @include grid-row;
-
-
 
 
 }

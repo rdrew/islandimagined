@@ -1,0 +1,24 @@
+footer {
+  $text-color: $tan-1;
+  $bg-color: $tan-4;
+  /*color: lighten($tan-4, 40%);*/
+  color: $text_color;
+  background: $bg-color;
+  a {
+  float:right;
+  }
+  svg g {
+  
+    fill: $text-color;
+  }
+  
+}
+.sub-footer {
+  p {
+    margin:0;
+    
+  }
+  padding: 1rem;
+  background: darken($tan-4, 10%);
+  
+}
