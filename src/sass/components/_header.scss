@@ -3,6 +3,9 @@
 
   padding-top: 1rem;
 }
+
+
+
 header {
 
   text-align: center;
@@ -12,8 +15,8 @@ header {
   margin: 0 1rem;
 
   h1 {
-  
-  
+
+
   }
   a {
 
@@ -30,6 +33,10 @@ header {
 }
 
 .site-name__icon { 
+  svg {
+    fill: $black;
+
+  }
   padding-top: rem-calc(10);
 
   svg { 
@@ -48,16 +55,16 @@ header {
   margin-top: 1rem;
   @extend .menu-centered;
   &__items {
-  
+
     background: $tan-3;
   }
   a {
-  
-      font-family: $font__fell-1--sc;
+
+    font-family: $font__fell-1--sc;
     color: $white;
     &:hover {
-    background: $tan-1;
-    color:$black;
+      background: $tan-1;
+      color:$black;
     }
   }
 }
