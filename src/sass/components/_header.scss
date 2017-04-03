@@ -1,7 +1,7 @@
 .l-header {
   background:$tan-2;
 
-  padding-top: 1rem;
+  padding-top: $global_padding;
 }
 
 
@@ -11,22 +11,12 @@ header {
   text-align: center;
 
 }
-#site-name {
-  margin: 0 1rem;
+.site-branding__name {
 
-  h1 {
-
-
-  }
-  a {
-
+  margin: 0 $global-margin;
     color: $black;
-
-  }
-
-
+  
 }
-
 .site-slogan {
 
   @extend h2;
@@ -52,7 +42,7 @@ header {
 }
 .main-menu {
   text-align:center;
-  margin-top: 1rem;
+  margin-top: $global-margin;
   @extend .menu-centered;
   &__items {
 

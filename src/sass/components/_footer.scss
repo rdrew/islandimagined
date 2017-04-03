@@ -1,5 +1,5 @@
 footer {
-  padding-top: 1rem ;
+  padding-top: $global-padding;
   $text-color: $tan-1;
   $bg-color: $tan-4;
   /*color: lighten($tan-4, 40%);*/
@@ -26,7 +26,7 @@ footer {
     margin:0;
     
   }
-  padding: 1rem;
+  padding: $global-padding;
   background: darken($tan-4, 10%);
   
 }
@@ -43,7 +43,7 @@ footer {
  text-align: right;
  }
  #upei_logo svg {
- padding-top: 1rem;
+ padding-top: $global-padding;
    width: 11rem;
  
  }
