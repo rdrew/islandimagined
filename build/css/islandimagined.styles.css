@@ -4704,6 +4704,7 @@ a.thumbnail {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 footer {
+  margin-top: 1rem;
   padding-top: 1rem;
   /*color: lighten($tan-4, 40%);*/
   color: #F6DBBB;
@@ -4745,7 +4746,7 @@ footer {
 header {
   text-align: center; }
 
-.site-branding__name {
+.site-name {
   margin: 0 1rem;
   color: #2f2b27; }
 
@@ -4782,6 +4783,26 @@ header {
 .landing-page .breadcrumbs,
 .landing-page .tabs {
   display: none; }
+
+/*
+ *cards
+ */
+.card_icon {
+  display: none; }
+  .card_icon svg {
+    width: 100%;
+    height: auto;
+    fill: #2f2b27; }
+
+.interactive .wheel,
+.learn_more .telescope,
+.archives .sextant {
+  display: block; }
+
+.card_icon {
+  width: 2.5rem;
+  float: left;
+  margin-right: 0.5rem; }
 
 .l-main {
   padding-top: 1rem; }
