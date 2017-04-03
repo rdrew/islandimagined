@@ -1,8 +1,8 @@
 <?php
 
 /**
- * set variables for pulling block in directly
- */
+* set variables for pulling block in directly
+*/
 ////#######################################################################
 //$simpleSearch = module_invoke('islandora_solr', 'block_view', 'simple');
 //$mainMenu = module_invoke('menu_block', 'block_view', '1');
@@ -21,13 +21,13 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
       <div class="site-branding">
         <!--<?php if ($logo): ?>-->
         <!--<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo">-->
-          <!--<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />-->
+        <!--<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />-->
         <!--</a>-->
         <!--<?php endif; ?>-->
 
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo">
 
-<?php echo file_get_contents( $image_path . "upei.svg"); ?>
+          <?php echo file_get_contents( $image_path . "upei.svg"); ?>
         </a>
 
         <?php if ($site_name): ?>
@@ -43,11 +43,40 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
 
   </div>
   <header class="l-header l-constrained" role="banner">
+    <!--site branding-->
+
+    <div class="site-name__container">
+      <div class="site-name__icon">
+
+        <?php echo file_get_contents( $image_path . "compass.svg"); ?>
+
+      </div>
+
+      <?php if ($site_name): ?>
+      <h1>
+        <a href="<?php print $front_page; ?>" class="site-branding__name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+      </h1>
+      <?php endif; ?>
+
+      <div class="site-name__icon">
+        <?php echo file_get_contents( $image_path . "compass.svg"); ?>
+      </div>
+    </div>
+    <?php if ($site_slogan): ?>
+    <h2 class="site-branding__slogan"><?php print $site_slogan; ?></h2>
+    <?php endif; ?>
+    <!--/site branding-->
+
+
+
+
+
+
     <?php print render($page['header']); ?>
   </header>
 
-    <?php print render($page['hero']); ?>
-    <?php print render($page['branding']); ?>
+  <?php print render($page['hero']); ?>
+  <?php print render($page['branding']); ?>
 
   <?php if (!empty($page['highlighted'])): ?>
   <div class="l-highlighted-wrapper">
@@ -80,6 +109,19 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
   </div>
 
   <footer class="l-footer-wrapper" role="contentinfo">
+
+    <div class="footer-logos row">
+      <div class="footer-logo column medium-4" id="upei_logo">
+        <?php echo file_get_contents( $image_path . "UPEI_Logo_white.svg"); ?>
+      </div>
+      <div class="footer-logo column medium-4" id="prov_govt">
+        <?php echo file_get_contents( $image_path . "pei_gvt_logo.svg"); ?>
+      </div>
+      <div class="footer-logo column medium-4" id="museum">
+        <?php echo file_get_contents( $image_path . "can_heritage.svg"); ?>
+      </div>
+    </div>
+
     <?php print render($page['footer']); ?>
   </footer>
 </div>
