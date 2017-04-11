@@ -54,7 +54,7 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
 
       <?php if ($site_name): ?>
       <h1>
-        <a href="<?php print $front_page; ?>" class="site-branding__name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+        <a href="<?php print $front_page; ?>" class="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
       </h1>
       <?php endif; ?>
 
@@ -118,7 +118,7 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
         <?php echo file_get_contents( $image_path . "pei_gvt_logo.svg"); ?>
       </div>
       <div class="footer-logo column medium-4" id="museum">
-        <?php echo file_get_contents( $image_path . "can_heritage.svg"); ?>
+        <?php echo file_get_contents( $image_path . "museum_logo.svg"); ?>
       </div>
     </div>
 
