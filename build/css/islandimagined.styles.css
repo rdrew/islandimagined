@@ -5924,6 +5924,27 @@ header {
       background: #F6DBBB;
       color: #2f2b27; }
 
+.learn-more .panel-pane {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-bottom: 1rem; }
+
+.faq dd {
+  margin-bottom: 1rem; }
+
+.ol_books .media-object {
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(47, 43, 39, 0.25);
+  border-radius: 0; }
+  .ol_books .media-object > :first-child {
+    margin-top: 0; }
+  .ol_books .media-object > :last-child {
+    margin-bottom: 0; }
+  .ol_books .media-object .thumbnail img {
+    width: 100px; }
+
 /*
  *landing page tweaks
  */
@@ -6017,6 +6038,14 @@ header {
     content: ' '; }
   .l-main::after, .l-region-header::after {
     clear: both; }
+
+.pageTitle {
+  float: left;
+  width: calc(100% - 100px); }
+
+.config-dropdown {
+  display: inline-block;
+  width: 100px; }
 
 /**********
  *  junk  *
