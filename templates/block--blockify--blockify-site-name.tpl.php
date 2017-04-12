@@ -44,7 +44,6 @@
  * @ingroup themeable
  */
 
-
 $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
 
 ?>
