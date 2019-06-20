@@ -24,9 +24,9 @@ function islandimagined_menu_local_tasks(&$variables) {
     if (!empty($variables['primary'])) {
       $variables['primary']['#prefix'] = '<div class="config-dropdown">';
 			//$variables['primary']['#prefix'] .= '<span class="config-dropdown__button js-config-dropdown__button"><i class="fa fa-cogs" aria-hidden="true"></i> </span>';
-			$variables['primary']['#prefix'] .= '<button class="button config-dropdown__button" type="button" data-toggle="config-dropdown">Toggle Dropdown</button>';
+      $variables['primary']['#prefix'] .= '<button class="small button config-dropdown__button hover float-right" type="button" data-toggle="config-dropdown"><i class="fi-list"></i><span>&nbsp;Edit</span></button>';
       $variables['primary']['#prefix'] .= '<h2 class="element-invisible">' . t('Configuration Menu') . '</h2>';
-      $variables['primary']['#prefix'] .= '<ul class="config-dropdown__menu dropdown-pane" id="config-dropdown" data-dropdown data-auto-focus="true">';
+      $variables['primary']['#prefix'] .= '<ul class="config-dropdown__menu bottom menu vertical dropdown-pane" id="config-dropdown" data-dropdown data-auto-focus="true">';
       $variables['primary']['#suffix'] = '</ul>';
       $variables['primary']['#suffix'] .= '</div><!--end config dropdown menu-->';
       $output .= drupal_render($variables['primary']);
