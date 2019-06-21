@@ -20,11 +20,11 @@ var gulp = require("gulp"),
 var _themeName = "islandimagined";
 
 //url of the remote site
-var _url = "http://islandimagined.hp1.islandarchives.ca";
+var _url = "https://islandimagined.dev.islandarchives.ca/";
 
 //path to the themes assets (compiled css, js, imgs) dir
 //var _path = "/themes/orion/build";
-var _path = "/sites/hp1.islandarchives.ca.islandimagined/themes/islandimagined/build";
+var _path = "/sites/islandimagined.dev.islandarchives.ca/themes/islandimagined/build";
 
 //make sure the 2 Dirs are correct
 var config = {
@@ -138,66 +138,27 @@ gulp.task("js", function() {
 
 gulp.task("browserSync", ["sass_dev", "js"], function() {
 
-  //RegExp for finding and removing main css file rather that just override
-  //var _regex = new RegExp("@import.*" + _path + ".*;", "g");
-  //var _regex = new RegExp("<link.*\/" + _themeName + "\/css\/.*", "g");
-  var _regex = new RegExp("@import.*\/" + _themeName + "\/build\/css.*", "g");
-
   browserSync.init({
-    proxy: {
-      target: config.remoteURL
-    },
-    open: false,
-    rewriteRules: [
-      {
-        match: _regex,
-        fn: function (req, res, match) {
-          return '';
-        }
-      },
-
-      {
-        // Inject Local CSS at the end of HEAD
-        match: /<\/head>/i,
-        fn: function(req, res, match) {
-          var localCssAssets = "";
-          for (var i = 0; i < config.localAssets.css.length; i++) {
-
-            var files = glob.sync(config.localAssets.css[i], {
-              cwd: config.injectDir
-            });
-
-            for (var file in files) {
-              localCssAssets += "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + config.localPath + "/" + files[file] + "\">";
+        proxy: _url,
+        //port: browserSyncPort,
+        logLevel: 'debug',
+        serveStatic: ['.'],
+        startPath: "user",
+        open: false,
+        injectChanges: true,
+        files: ['build/css/islandimagined.styles.css', 'build/js/islandimagined.behaviors.js'],
+        plugins: ['bs-rewrite-rules'],
+        rewriteRules: [
+            {
+                match: '/sites/islandimagined.dev.islandarchives.ca/themes/islandimagined/build/css/islandimagined.styles.css',
+                replace: '/build/css/islandimagined.styles.css'
+            },
+            {
+                match: '/sites/islandimagined.dev.islandarchives.ca/themes/islandimagined/build/js/islandimagined.behaviors.js',
+                replace: '/build/js/islandimagined.behaviors.js'
             }
-          }
+        ]
 
-          return localCssAssets + match;
-        }
-      }, {
-        // Inject Local JS at the end of BODY
-        match: /<\/body>/i,
-        fn: function(req, res, match) {
-          var localJsAssets = "";
-          for (var i = 0; i < config.localAssets.js.length; i++) {
-
-            var files = glob.sync(config.localAssets.js[i], {
-              cwd: config.injectDir
-            });
-
-            for (var file in files) {
-              localJsAssets += "<script src=\"" + config.localPath + "/" + files[file] + "\"></script>";
-            }
-          }
-
-          return localJsAssets + match;
-        }
-      }],
-    serveStatic: [{
-      route: config.localPath,
-      dir: config.injectDir
-    }],
-    watchTask: true
   });
 });
 

@@ -40,7 +40,10 @@ header {
   justify-content: center;
 
 }
+
+$dropdownmenu-background: $tan-3;
 .main-menu {
+    //display:none;
   text-align:center;
   margin-top: $global-margin;
   @extend .menu-centered;
@@ -58,4 +61,9 @@ header {
     }
   }
 }
-
+.dropdown.menu > li > a {
+    background: $dropdownmenu-background;
+}
+.dropdown.menu > li > a {
+    background: $dropdownmenu-background;
+}

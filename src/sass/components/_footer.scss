@@ -38,13 +38,20 @@ margin-top: $global-margin;
  
  }
  #prov_govt {
- text-align: center;
+ //text-align: center;
  }
  #museum {
- text-align: right;
+ //text-align: right;
  }
  #upei_logo svg {
  padding-top: $global-padding;
    width: 11rem;
  
+ }
+ .l-region--footer {
+     @include flex-grid-row();
+     & > * {
+         @include flex-grid-column();
+         @extend .text-center;
+     }
  }
