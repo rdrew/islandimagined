@@ -110,18 +110,11 @@ $image_path = drupal_get_path('theme', 'islandimagined') . '/images/';
 
   <footer class="l-footer-wrapper" role="contentinfo">
 
-    <div class="footer-logos row">
-      <div class="footer-logo column medium-4" id="upei_logo">
-        <?php echo file_get_contents( $image_path . "UPEI_Logo_white.svg"); ?>
-      </div>
-      <div class="footer-logo column medium-4" id="prov_govt">
-        <?php echo file_get_contents( $image_path . "pei_gvt_logo.svg"); ?>
-      </div>
-      <div class="footer-logo column medium-4" id="museum">
-        <?php echo file_get_contents( $image_path . "museum_logo.svg"); ?>
-      </div>
+    <div class="footer-logos">
+    <?php print render($page['footer']); ?>
+    </div>
+    <div class="subfooter">
     </div>
 
-    <?php print render($page['footer']); ?>
   </footer>
 </div>
