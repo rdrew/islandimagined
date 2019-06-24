@@ -34,7 +34,7 @@
         .l-main {
             display: grid;
             grid-gap: $global-margin * 2;
-            grid-template-columns: auto rem-calc(300);
+            grid-template-columns: auto rem-calc(260);
             grid-template-areas:
                 'breadcrumbs breadcrumbs'
                 'content sidebar';
