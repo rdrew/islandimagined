@@ -16,6 +16,10 @@
 function islandimagined_menu_tree__menu_block__1(&$variables) {
     return '<ul class="main-menu__items dropdown menu" data-dropdown-menu>' . $variables['tree'] . '</ul>';
 }
+//main menu (top) using the menu block module
+function islandimagined_menu_tree__menu_block__2(&$variables) {
+    return '<ul class="main-menu__items dropdown menu" data-dropdown-menu>' . $variables['tree'] . '</ul>';
+}
 
 function islandimagined_menu_local_tasks(&$variables) {
   if (!path_is_admin(current_path())) {

@@ -51,7 +51,7 @@
 
     .simple-search {
       @extend .top-bar-right;
-      margin-top: rem-calc(8);
+      //margin-top: rem-calc(8);
       width: $topbar-input-width !important;
     }
 
