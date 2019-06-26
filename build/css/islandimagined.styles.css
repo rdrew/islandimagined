@@ -6186,8 +6186,6 @@ footer {
   /*color: lighten($tan-4, 40%);*/
   color: #F6DBBB;
   background: #574938; }
-  footer a {
-    float: right; }
   footer svg {
     width: 100%;
     height: auto; }
@@ -6198,13 +6196,45 @@ footer {
         stroke: #F6DBBB; }
 
 .subfooter {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  max-width: 100%;
   padding: 1rem;
   background: #382f24; }
-  .subfooter p {
-    margin: 0; }
+  .subfooter__text {
+    -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      .subfooter__text {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+  .subfooter__image {
+    -ms-flex: 0 0 16.66667%;
+        flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      .subfooter__image {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
 
 .footer-logo svg {
   width: 9rem; }
+
+#prov_govt {
+  text-align: center; }
+
+#museum {
+  text-align: center; }
 
 #upei_logo svg {
   padding-top: 1rem;
