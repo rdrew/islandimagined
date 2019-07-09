@@ -14,7 +14,14 @@
     @include flex-grid-row();
 }
 .lp-feature-block {
-    @include breakpoint(medium) {
+    @include flex-grid-column(100%);
+    @include breakpoint(980) {
         @include flex-grid-column();
+    }
+}
+.card h2 {
+    font-size: rem-calc(27);
+    @include breakpoint(1172px) {
+        font-size: 2.125rem;
     }
 }

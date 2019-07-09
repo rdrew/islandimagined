@@ -23,11 +23,12 @@ margin-top: $global-margin;
   
 }
 .subfooter {
+     max-width: 100%;
     @include breakpoint(medium){
 
      @include flex-grid-row();
-    };
      max-width: 100%;
+    };
 
      &__text {
 

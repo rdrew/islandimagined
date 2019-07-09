@@ -6180,17 +6180,33 @@ a.thumbnail {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
 
-@media print, screen and (min-width: 40em) {
-  .lp-feature-block {
-    -ms-flex: 1 1 0px;
-        flex: 1 1 0px;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    min-width: 0; } }
-  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+.lp-feature-block {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem; }
+  @media print, screen and (min-width: 40em) {
     .lp-feature-block {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
+  @media screen and (min-width: 61.25em) {
+    .lp-feature-block {
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      min-width: 0; } }
+  @media screen and (min-width: 61.25em) and (min-width: 40em) {
+    .lp-feature-block {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+
+.card h2, .card .site-slogan {
+  font-size: 1.6875rem; }
+  @media screen and (min-width: 73.25em) {
+    .card h2, .card .site-slogan {
+      font-size: 2.125rem; } }
 
 .islandora-solr-facet-wrapper {
   border-bottom: 4px double #A88F71;
@@ -6230,7 +6246,8 @@ footer {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
+          flex-flow: row wrap;
+      max-width: 100%; } }
   .subfooter__text {
     -ms-flex: 0 0 83.33333%;
         flex: 0 0 83.33333%;
@@ -6437,7 +6454,8 @@ header {
       align-items: center;
   padding: 0.5rem;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  flex-direction: row; }
   .topnav,
   .topnav ul {
     background-color: #2f2b27; }
@@ -6467,13 +6485,19 @@ header {
       line-height: 0;
       border-right: 1px solid #fff; }
       .topnav .site-branding__logo svg {
-        width: 7.5rem;
+        width: 5rem;
         height: auto; }
+        @media print, screen and (min-width: 40em) {
+          .topnav .site-branding__logo svg {
+            width: 7.5rem; } }
     .topnav .site-branding__name {
-      font-size: 2rem;
+      font-size: 1.4rem;
       display: inline-block;
       font-family: "IM Fell Great Primer SC", serif;
       color: #fefefe; }
+      @media print, screen and (min-width: 40em) {
+        .topnav .site-branding__name {
+          font-size: 2rem; } }
     .topnav .site-branding__slogan {
       font-size: 1rem;
       display: none; }
@@ -6485,6 +6509,28 @@ header {
   .topnav .simple-search {
     width: 16rem !important; }
 
+@media screen and (max-width: 39.99875em) {
+  .mobile-menu-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+    cursor: pointer; }
+    .mobile-menu-button::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+      content: ''; }
+    .mobile-menu-button:hover::after {
+      background: #8a8a8a;
+      box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a; } }
+
 .topnav .main-menu {
   display: none; }
 
@@ -6492,11 +6538,14 @@ header {
   display: block; }
 
 .l-region--navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  margin-top: 0.5rem; }
+  display: none; }
+  @media print, screen and (min-width: 40em) {
+    .l-region--navigation {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      margin-top: 0.5rem; } }
 
 .adminimal-menu .topnav.is-stuck {
   margin-top: 1.75rem !important; }
