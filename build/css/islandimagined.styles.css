@@ -3027,7 +3027,7 @@ h6, .h6 {
     color: #cacaca; }
 
 h1, .h1 {
-  font-size: 1.625rem;
+  font-size: 2.625rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -3035,7 +3035,7 @@ h1, .h1 {
 
 h2,
 .site-slogan, .h2 {
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -3086,7 +3086,8 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #3d5527; }
+    color: #333;
+    text-decoration: underline; }
   a img {
     border: 0; }
 
@@ -4927,28 +4928,15 @@ a.button:hover, a.button:focus {
   width: 250px;
   -ms-transform: translateX(-250px);
       transform: translateX(-250px); }
-  @media print, screen and (min-width: 40em) {
-    .position-left {
-      width: 250px;
-      -ms-transform: translateX(-250px);
-          transform: translateX(-250px); } }
   .off-canvas-content .off-canvas.position-left {
     -ms-transform: translateX(-250px);
         transform: translateX(-250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content .off-canvas.position-left {
-        -ms-transform: translateX(-250px);
-            transform: translateX(-250px); } }
     .off-canvas-content .off-canvas.position-left.is-transition-overlap.is-open {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }
   .off-canvas-content.is-open-left.has-transition-push {
     -ms-transform: translateX(250px);
         transform: translateX(250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content.is-open-left.has-transition-push {
-        -ms-transform: translateX(250px);
-            transform: translateX(250px); } }
   .position-left.is-transition-push {
     box-shadow: inset -13px 0 20px -13px rgba(47, 43, 39, 0.25); }
 
@@ -4960,28 +4948,15 @@ a.button:hover, a.button:focus {
   width: 250px;
   -ms-transform: translateX(250px);
       transform: translateX(250px); }
-  @media print, screen and (min-width: 40em) {
-    .position-right {
-      width: 250px;
-      -ms-transform: translateX(250px);
-          transform: translateX(250px); } }
   .off-canvas-content .off-canvas.position-right {
     -ms-transform: translateX(250px);
         transform: translateX(250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content .off-canvas.position-right {
-        -ms-transform: translateX(250px);
-            transform: translateX(250px); } }
     .off-canvas-content .off-canvas.position-right.is-transition-overlap.is-open {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }
   .off-canvas-content.is-open-right.has-transition-push {
     -ms-transform: translateX(-250px);
         transform: translateX(-250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content.is-open-right.has-transition-push {
-        -ms-transform: translateX(-250px);
-            transform: translateX(-250px); } }
   .position-right.is-transition-push {
     box-shadow: inset 13px 0 20px -13px rgba(47, 43, 39, 0.25); }
 
@@ -4993,28 +4968,15 @@ a.button:hover, a.button:focus {
   height: 250px;
   -ms-transform: translateY(-250px);
       transform: translateY(-250px); }
-  @media print, screen and (min-width: 40em) {
-    .position-top {
-      height: 250px;
-      -ms-transform: translateY(-250px);
-          transform: translateY(-250px); } }
   .off-canvas-content .off-canvas.position-top {
     -ms-transform: translateY(-250px);
         transform: translateY(-250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content .off-canvas.position-top {
-        -ms-transform: translateY(-250px);
-            transform: translateY(-250px); } }
     .off-canvas-content .off-canvas.position-top.is-transition-overlap.is-open {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }
   .off-canvas-content.is-open-top.has-transition-push {
     -ms-transform: translateY(250px);
         transform: translateY(250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content.is-open-top.has-transition-push {
-        -ms-transform: translateY(250px);
-            transform: translateY(250px); } }
   .position-top.is-transition-push {
     box-shadow: inset 0 -13px 20px -13px rgba(47, 43, 39, 0.25); }
 
@@ -5026,28 +4988,15 @@ a.button:hover, a.button:focus {
   height: 250px;
   -ms-transform: translateY(250px);
       transform: translateY(250px); }
-  @media print, screen and (min-width: 40em) {
-    .position-bottom {
-      height: 250px;
-      -ms-transform: translateY(250px);
-          transform: translateY(250px); } }
   .off-canvas-content .off-canvas.position-bottom {
     -ms-transform: translateY(250px);
         transform: translateY(250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content .off-canvas.position-bottom {
-        -ms-transform: translateY(250px);
-            transform: translateY(250px); } }
     .off-canvas-content .off-canvas.position-bottom.is-transition-overlap.is-open {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }
   .off-canvas-content.is-open-bottom.has-transition-push {
     -ms-transform: translateY(-250px);
         transform: translateY(-250px); }
-    @media print, screen and (min-width: 40em) {
-      .off-canvas-content.is-open-bottom.has-transition-push {
-        -ms-transform: translateY(-250px);
-            transform: translateY(-250px); } }
   .position-bottom.is-transition-push {
     box-shadow: inset 0 13px 20px -13px rgba(47, 43, 39, 0.25); }
 
@@ -6543,8 +6492,11 @@ header {
     .l-region--navigation {
       display: -ms-flexbox;
       display: flex;
+      width: 100%;
       -ms-flex-align: center;
           align-items: center;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
       margin-top: 0.5rem; } }
 
 .adminimal-menu .topnav.is-stuck {

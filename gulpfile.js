@@ -144,7 +144,7 @@ gulp.task("browserSync", ["sass_dev", "js"], function() {
         logLevel: 'debug',
         serveStatic: ['.'],
         startPath: "user",
-        open: false,
+        //open: false,
         injectChanges: true,
         files: ['build/css/islandimagined.styles.css', 'build/js/islandimagined.behaviors.js'],
         plugins: ['bs-rewrite-rules'],
