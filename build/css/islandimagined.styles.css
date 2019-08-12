@@ -6140,16 +6140,59 @@ a.thumbnail {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
   @media screen and (min-width: 61.25em) {
-    .lp-feature-block {
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0px;
+    .lp-feature-block.archives {
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+      max-width: 60%;
       padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      min-width: 0; } }
+      padding-left: 0.625rem; } }
   @media screen and (min-width: 61.25em) and (min-width: 40em) {
-    .lp-feature-block {
+    .lp-feature-block.archives {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
+  @media screen and (min-width: 61.25em) {
+    .lp-feature-block.learn_more {
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+      max-width: 40%;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+  @media screen and (min-width: 61.25em) and (min-width: 40em) {
+    .lp-feature-block.learn_more {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+  @media screen and (min-width: 61.25em) {
+    .lp-feature-block h4 {
+      margin: 0; }
+    .lp-feature-block ul li a {
+      padding: 0; }
+    .lp-feature-block ul {
+      list-style-type: none;
+      margin-left: 0; }
+      .lp-feature-block ul li {
+        margin: 0; } }
+
+.archives .card-section {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin: 0; }
+  .archives .card-section .left,
+  .archives .card-section .right {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      .archives .card-section .left,
+      .archives .card-section .right {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
 
 .card h2, .card .site-slogan {
   font-size: 1.6875rem; }

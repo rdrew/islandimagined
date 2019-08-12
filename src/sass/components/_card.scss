@@ -14,9 +14,40 @@
     @include flex-grid-row();
 }
 .lp-feature-block {
+    //layout
     @include flex-grid-column(100%);
     @include breakpoint(980) {
-        @include flex-grid-column();
+        &.archives {
+            @include flex-grid-column(60%);
+        }
+        &.learn_more {
+            //display: none;
+            @include flex-grid-column(40%);
+        }
+        //styles
+        h4 {
+            margin: 0;
+        }
+        ul li a {
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            li {
+                margin: 0;
+            }
+        }
+    }
+}
+.archives {
+    .card-section {
+        @include flex-grid-row();
+        margin: 0;
+        .left,
+        .right {
+            @include flex-grid-column(50%);
+        }
     }
 }
 .card h2 {
